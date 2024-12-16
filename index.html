@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X299</title>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(144deg, DarkSlateBlue, LightCoral);
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 40px 0;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            background: #ff4500;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .hero button:hover {
+            background: #e03e00;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            flex: 1 1 30%;
+            margin: 10px;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .specs {
+            margin-top: 20px;
+            width: 100%;
+            border-spacing: 0;
+            border-collapse: separate;
+        }
+
+        .specs th, .specs td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        .specs th {
+            background-color: #f9f9f9;
+            border-bottom: 2px solid #e5e5e5;
+            font-weight: bold;
+        }
+
+        .specs td {
+            border-bottom: 1px solid #e5e5e5;
+            color: #555;
+        }
+
+        .specs tr:nth-child(even) td {
+            background-color: #fafafa;
+        }
+
+        .specs tr:hover td {
+            background-color: #f1f1f1;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #ff6347;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <img src="assets/logo.svg" height=50>
+                <div class="nav-links">
+                    <a href="#rev">Ревізії</a>
+                    <a href="#spec">Специфікація</a>
+                    <a href="#doc">Документація</a>
+                    <a href="#contact">Код</a>
+                </div>
+            </nav>
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>RAMPAGE VI Ω</h1>
+                    <p>305 x 277 mm (SSI-CEB/E-ATX)</p>
+                    <button onclick="location.href='https://github.com/asmedit/M396F'" type="button">Github</button>
+                </div>
+                <div class="hero-image">
+                    <img width=400 src="assets/rampage6.avif" style="padding: 0px 0px 10px 10px;background-color:#EEEEEE;">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    <section id="intro" class="container">
+            <h2><a name="rev"></a></h2>
+            <p>У якості платформи була обрана серія ASUS Rampage VI. На прикладі серії материнських плат Rampage VI для процесорів X-серії Intel покажемо, як виробники плат компонують лінії PCIe.</p>
+            <p>Перша плата Rampage VI Apex була представлена на COMPUTEX у 2017 році. Через пів року вийшла версія з портом U.2 Rampage VI Extreme. Через два роки на CES у 2019 році була представлена плата Rampage VI Omega з більш мінімалістичною розводкою PCIe, орієнтованою на масиви NVMe. Так само через півроку на GAMESCOM у 2019 році була представлена оновлена версія плат без порту U.2 Rampage VI Extreme Encore. Я самостійно визначив конфігурації цих материнських плат для процесорів з 48 лініями PCIe, за допомогою посібників користувача.</p>
+    </section>
+    <section id="revisions" class="container">
+            <h2><a name="spec">Ревізії</a></h2>
+            <h3>RAMPAGE VI APEX Q1 2017</h3>
+            <h3>RAMPAGE VI EXTREME Q3 2017</h3>
+            <h3>RAMPAGE VI EXTREME OMEGA Q1 2019</h3>
+            <h3>RAMPAGE VI EXTREME ENCORE Q3 2019</h3>
+    </section>
+    <section id="specifications" class="container">
+            <h2><a name="spec">Специфікація</a></h2>
+            <table class="specs">
+                <tr>
+                    <th>Процесор:</th>
+                    <td>Intel® Socket 2066 Core™ X-Series Processors</td>
+                </tr>
+                <tr>
+                    <th>Чіпсет:</th>
+                    <td>Intel® X299.</td>
+                </tr>
+                <tr>
+                    <th>Пам'ять:</th>
+                    <td>8 x DIMM, Max. 256GB, DDR4 4266--2133 MHz Non-ECC, Un-buffered Memory.</td>
+                </tr>
+            </table>
+        </section>
+    <section id="specifications" class="container">
+            <h2><a name="doc">Документація</a></h2>
+    </section>
+        </main>
+
+    <footer>
+        <p> 2024 &copy; KS GROUP. All rights reserved.</p>
+    </footer>
+</body>
+</html>
